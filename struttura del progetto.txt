@@ -1,0 +1,11 @@
+pdf-studio/
+├── main.py              # Entry point
+├── core/                # Logica (nessuna dipendenza dalla GUI)
+│   ├── merger.py        # Merge, split, rotate, delete
+│   ├── optimizer.py     # Compress, protect, watermark
+│   ├── extractor.py     # Testo, tabelle, immagini
+│   └── ocr.py           # OCR con Tesseract
+├── ui/
+│   ├── main_window.py   # Finestra principale
+│   └── pdf_preview.py   # Widget anteprima
+└── build.py             # Script di packaging
